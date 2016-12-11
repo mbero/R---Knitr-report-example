@@ -118,29 +118,98 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Report</h1>
 <h4 class="author"><em>Marcin Berendt</em></h4>
-<h4 class="date"><em>1 grudnia 2016</em></h4>
+<h4 class="date"><em>11 grudnia 2016</em></h4>
 
 </div>
 
 
-<pre class="r"><code>data &lt;- tb
-summary(data)</code></pre>
-<pre><code>##    country               year          sex                child        
-##  Length:3800        Min.   :1995   Length:3800        Min.   :    0.0  
-##  Class :character   1st Qu.:1999   Class :character   1st Qu.:   25.0  
-##  Mode  :character   Median :2004   Mode  :character   Median :   76.0  
-##                     Mean   :2004                      Mean   :  493.2  
-##                     3rd Qu.:2009                      3rd Qu.:  264.5  
-##                     Max.   :2013                      Max.   :25661.0  
-##                                                       NA's   :396      
-##      adult           elderly        
-##  Min.   :     0   Min.   :     0.0  
-##  1st Qu.:  1128   1st Qu.:    84.5  
-##  Median :  2589   Median :   230.0  
-##  Mean   : 10864   Mean   :  1253.0  
-##  3rd Qu.:  6706   3rd Qu.:   640.0  
-##  Max.   :731540   Max.   :125991.0  
-##  NA's   :413      NA's   :413</code></pre>
+<pre><code>## Short summary of data from library EDAWR</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center">country</th>
+<th align="center">year</th>
+<th align="center">sex</th>
+<th align="center">child</th>
+<th align="center">adult</th>
+<th align="center">elderly</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">Length:3800</td>
+<td align="center">Min. :1995</td>
+<td align="center">Length:3800</td>
+<td align="center">Min. : 0.0</td>
+<td align="center">Min. : 0</td>
+<td align="center">Min. : 0.0</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center">Class :character</td>
+<td align="center">1st Qu.:1999</td>
+<td align="center">Class :character</td>
+<td align="center">1st Qu.: 25.0</td>
+<td align="center">1st Qu.: 1128</td>
+<td align="center">1st Qu.: 84.5</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">Mode :character</td>
+<td align="center">Median :2004</td>
+<td align="center">Mode :character</td>
+<td align="center">Median : 76.0</td>
+<td align="center">Median : 2589</td>
+<td align="center">Median : 230.0</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center">NA</td>
+<td align="center">Mean :2004</td>
+<td align="center">NA</td>
+<td align="center">Mean : 493.2</td>
+<td align="center">Mean : 10864</td>
+<td align="center">Mean : 1253.0</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">NA</td>
+<td align="center">3rd Qu.:2009</td>
+<td align="center">NA</td>
+<td align="center">3rd Qu.: 264.5</td>
+<td align="center">3rd Qu.: 6706</td>
+<td align="center">3rd Qu.: 640.0</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center">NA</td>
+<td align="center">Max. :2013</td>
+<td align="center">NA</td>
+<td align="center">Max. :25661.0</td>
+<td align="center">Max. :731540</td>
+<td align="center">Max. :125991.0</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA’s :396</td>
+<td align="center">NA’s :413</td>
+<td align="center">NA’s :413</td>
+</tr>
+</tbody>
+</table>
+<pre><code>## Summary of ill people by sex</code></pre>
+<pre><code>## Source: local data frame [2 x 2]
+## Groups: sex [2]
+## 
+##      sex  nrow
+##    &lt;chr&gt; &lt;int&gt;
+## 1 female  1900
+## 2   male  1900</code></pre>
 
 
 

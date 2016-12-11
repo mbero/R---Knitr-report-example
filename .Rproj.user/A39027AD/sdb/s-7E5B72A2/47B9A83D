@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Report\"\nauthor: \"Marcin Berendt\"\ndate: \"11 grudnia 2016\"\noutput: html_document\n---\n\n```{r setup,  echo=FALSE, warning=FALSE}\nlibrary(knitr)\nlibrary(dplyr, warn.conflicts = FALSE)\nlibrary(EDAWR)\nlibrary(ggplot2)\nlibrary(grid)\n\nopts_chunk$set(echo=FALSE, warning=FALSE)\nwhole_data <- tb\n```\n\n```{r podsumowanie, echo=FALSE}\nmessage(\"Short summary of data from library EDAWR\")\nknitr::kable(summary(whole_data))\n\nmessage(\"Summary of ill people by sex\")\nwhole_data %>% group_by(sex) %>% do(data.frame(nrow=nrow(.)))\n\n",
+    "created" : 1481447565515.000,
+    "dirty" : false,
+    "encoding" : "CP1250",
+    "folds" : "",
+    "hash" : "2258902713",
+    "id" : "47B9A83D",
+    "lastKnownWriteTime" : 1481453472,
+    "last_content_update" : 1481453472428,
+    "path" : "C:/Users/Marcin/Dysk Google/Magisterka/III Semestr/Zaawansowana eksploracja danych/ZED ćwiczenia/Zadanie - Sprawozdanie/Report_1/Report_1.Rmd",
+    "project_path" : "Report_1.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

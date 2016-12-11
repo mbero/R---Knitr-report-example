@@ -1,16 +1,25 @@
 ---
 title: "Report"
 author: "Marcin Berendt"
-date: "1 grudnia 2016"
+date: "11 grudnia 2016"
 output: html_document
 ---
 
-```{r setup, include=FALSE, cache=TRUE}
-library(EDAWR)
+```{r setup,  echo=FALSE, warning=FALSE}
 library(knitr)
-knitr::opts_chunk$set(echo = TRUE)
+library(dplyr, warn.conflicts = FALSE)
+library(EDAWR)
+library(ggplot2)
+library(grid)
+
+opts_chunk$set(echo=FALSE, warning=FALSE)
+whole_data <- tb
 ```
 
-```{r podsumowanie, echo=TRUE}
-data <- tb
-summary(data)
+```{r podsumowanie, echo=FALSE}
+message("Short summary of data from library EDAWR")
+knitr::kable(summary(whole_data))
+
+message("Summary of ill people by sex")
+whole_data %>% group_by(sex) %>% do(data.frame(nrow=nrow(.)))
+
