@@ -1,0 +1,16 @@
+---
+title: "Report"
+author: "Marcin Berendt"
+date: "1 grudnia 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE, cache=TRUE}
+library(EDAWR)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r podsumowanie, echo=TRUE}
+data <- tb
+summary(data)

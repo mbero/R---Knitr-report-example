@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Report\"\nauthor: \"Marcin Berendt\"\ndate: \"1 grudnia 2016\"\noutput: html_document\n---\n\n```{r setup, include=FALSE, cache=TRUE}\nlibrary(EDAWR)\nlibrary(knitr)\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n```{r podsumowanie, echo=TRUE}\ndata <- tb\nsummary(data)",
+    "created" : 1481447565515.000,
+    "dirty" : false,
+    "encoding" : "CP1250",
+    "folds" : "",
+    "hash" : "199697207",
+    "id" : "47B9A83D",
+    "lastKnownWriteTime" : 1481448558,
+    "last_content_update" : 1481448558260,
+    "path" : "C:/Users/Marcin/Dysk Google/Magisterka/III Semestr/Zaawansowana eksploracja danych/ZED ćwiczenia/Zadanie - Sprawozdanie/Report_1/Report_1.Rmd",
+    "project_path" : "Report_1.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
